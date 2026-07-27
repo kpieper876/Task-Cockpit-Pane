@@ -1,0 +1,10 @@
+{
+  "id": "task-cockpit",
+  "name": "Task Cockpit",
+  "version": "0.1.6",
+  "minAppVersion": "1.8.1",
+  "description": "Manage Markdown checkbox tasks from a dashboard with editable metadata, grouping, sorting, filtering, and source-note links.",
+  "author": "Plugin Contributors",
+  "isDesktopOnly": false,
+  "main": "main.js"
+}

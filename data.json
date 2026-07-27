@@ -1,0 +1,10 @@
+{
+  "cutoffDays": 90,
+  "peopleFolders": "People",
+  "projectsRoot": "Projects",
+  "productsRoot": "Products",
+  "ignoreFolders": "Templates, Archives",
+  "meName": "Your Name",
+  "includeUnassigned": true,
+  "showCompleted": false
+}

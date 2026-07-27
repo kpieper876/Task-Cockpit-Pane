@@ -1,0 +1,293 @@
+.task-cockpit-root {
+  padding: 5px;
+  overflow-x: hidden;
+}
+.task-cockpit-root,
+.task-cockpit-root * {
+  box-sizing: border-box;
+}
+.task-cockpit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.task-cockpit-header h2 {
+  margin: 0;
+}
+.task-cockpit-toolbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 6px;
+  margin-bottom: 6px;
+  padding: 6px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-secondary);
+}
+.task-cockpit-control {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 100px;
+  max-width: 170px;
+  font-size: var(--font-ui-smaller);
+}
+.task-cockpit-control input,
+.task-cockpit-control select,
+.task-cockpit-row-controls select,
+.task-cockpit-row-controls input {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 24px;
+  font-size: var(--font-ui-smaller);
+}
+.task-cockpit-count {
+  margin: 4px 0 6px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+.task-cockpit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.task-cockpit-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.task-cockpit-group-heading {
+  margin: 7px 0 2px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-size: var(--font-ui-small);
+  line-height: 1.2;
+}
+.task-cockpit-card {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 5px;
+  align-items: start;
+  min-width: 0;
+  max-width: 100%;
+  padding: 6px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  overflow: hidden;
+}
+.task-cockpit-card > input[type="checkbox"] {
+  margin-top: 2px;
+}
+.task-cockpit-main {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.task-cockpit-text {
+  cursor: pointer;
+  line-height: 1.22;
+  margin-bottom: 3px;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.task-cockpit-text:hover {
+  text-decoration: underline;
+}
+.task-cockpit-meta {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  line-height: 1.2;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-cockpit-row-controls {
+  display: grid;
+  grid-template-columns: minmax(72px, .7fr) minmax(95px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(112px, .9fr) auto auto;
+  gap: 4px;
+  align-items: center;
+  max-width: 100%;
+  min-width: 0;
+}
+.task-cockpit-row-controls button {
+  height: 24px;
+  min-width: 28px;
+  padding: 0 6px;
+  font-size: var(--font-ui-smaller);
+}
+.task-cockpit-modal .setting-item {
+  align-items: flex-start;
+}
+.task-cockpit-full-width {
+  width: 100%;
+  min-width: 420px;
+}
+.task-cockpit-filter-menu {
+  position: relative;
+  width: 118px;
+  min-width: 118px;
+  padding: 4px 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 7px;
+  background: var(--background-primary);
+  font-size: var(--font-ui-smaller);
+}
+.task-cockpit-filter-menu[open] {
+  width: 100%;
+  min-width: min(100%, 420px);
+  flex-basis: 100%;
+}
+.task-cockpit-filter-menu > summary {
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  list-style-position: inside;
+  line-height: 18px;
+}
+.task-cockpit-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(105px, 1fr));
+  gap: 6px;
+  width: 100%;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+}
+.task-cockpit-filter-grid .task-cockpit-search {
+  grid-column: span 2;
+  min-width: 0;
+  max-width: 100%;
+}
+.task-cockpit-control input[type="number"] {
+  max-width: 100%;
+}
+.task-cockpit-link {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.task-cockpit-group-actions {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  margin-left: auto;
+}
+.task-cockpit-group-actions button {
+  height: 24px;
+  padding: 0 8px;
+  font-size: var(--font-ui-smaller);
+}
+.task-cockpit-group-heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+.task-cockpit-group-toggle {
+  width: 22px;
+  height: 20px;
+  min-width: 22px;
+  padding: 0;
+  line-height: 18px;
+  font-size: var(--font-ui-smaller);
+}
+.task-cockpit-group-body.is-collapsed {
+  display: none;
+}
+
+.task-cockpit-subgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 14px;
+  padding-left: 8px;
+  border-left: 2px solid var(--background-modifier-border);
+  min-width: 0;
+}
+.task-cockpit-subgroup-heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 4px 0 2px;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed var(--background-modifier-border);
+  font-size: var(--font-ui-smaller);
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+}
+.task-cockpit-subgroup-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.task-cockpit-toggles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.task-cockpit-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  font-size: var(--font-ui-smaller);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.task-cockpit-toggle input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.task-cockpit-only-grouped-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  font-size: var(--font-ui-smaller);
+  cursor: pointer;
+  user-select: none;
+}
+.task-cockpit-only-grouped-label input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  .task-cockpit-row-controls {
+    grid-template-columns: repeat(4, minmax(90px, 1fr)) auto auto;
+  }
+}
+@media (max-width: 760px) {
+  .task-cockpit-row-controls {
+    grid-template-columns: repeat(2, minmax(110px, 1fr)) auto auto;
+  }
+  .task-cockpit-filter-grid {
+    grid-template-columns: 1fr;
+  }
+  .task-cockpit-full-width {
+    min-width: 100%;
+  }
+}
+
