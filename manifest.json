@@ -6,5 +6,4 @@
   "description": "Manage Markdown checkbox tasks from a dashboard with editable metadata, grouping, sorting, filtering, and source-note links.",
   "author": "Plugin Contributors",
   "isDesktopOnly": false,
-  "main": "main.js"
 }
