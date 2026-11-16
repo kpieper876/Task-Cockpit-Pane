@@ -1,9 +1,9 @@
 {
   "id": "task-cockpit-pane",
   "name": "Task Cockpit Pane",
-  "version": "1.8.1",
+  "version": "0.2.0",
   "minAppVersion": "1.8.1",
   "description": "Manage Markdown checkbox tasks from a dashboard with editable metadata, grouping, sorting, filtering, and source-note links.",
   "author": "Plugin Contributors",
-  "isDesktopOnly": false,
+  "isDesktopOnly": false
 }
